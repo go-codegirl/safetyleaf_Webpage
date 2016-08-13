@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Safety Leaf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body { background: white !important;
+            padding-top: 40px;
+
+        } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+        .icon-bar {
+            background-color:#81b93c !important;
+        }
+
+    </style>
+    <link rel="stylesheet" href="CSS/productPage.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() > 800) { // check if user scrolled more than 50 from top of the browser window
+                    $(".navbar-fixed-top").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                } else {
+                    $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<!--data-spy="scroll" data-target=".navbar" data-offset="50"-->
+
+
+<nav class="navbar navbar-fixed-top" style="background-color:transparent;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="hidden-xs"> <img src="images/SafetyLeaf_logo.png"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav  navbar-right">
+                <li><button type="button" class="btn btn-success">TRY FOR FREE</button></li>
+                <li><a href="productPage.html">Product</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Support</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="caret"></span></a>
+                <li style="padding-top: 8px;"><img src="images/Phone_icon.png"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div id="section2" style="margin-left: -20px; margin-right: -20px;">
+
+        <img src="images/Productpage_hero.png" class="img-responsive">
+
+
+    </div>
+</div>
+
+<div class="container-fluid">
+        <div class="row" style="padding-bottom: 100px; padding-top: 50px; ">
+
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                    <img src="images/Easy_Registration.png"><small>Easy Registration</small><br>
+                    <p style="margin-top: -25px;">SafetyLeaf offers you the simple, quick and<br>faster registration process for
+                        both HR<br>Portal and Employ Portal.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                    <img src="images/Hassel_free.png"><small>Hassel Free</small><br>
+                    <p style="margin-top: -25px;">Signing up is Simple, Elegant and<br>Hassle Free. With the blink of an eye<br>
+                        you can register and get started.</p>
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                    <img src="images/Dashboard.png"><small>Dashboard</small><br>
+                    <p style="margin-top: -25px;">The Dashboard of both HR and Employee<br>Portal gives a bird eye view of every<br>
+                        informatiom in one convenient space.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                    <img src="images/Stay_Notified.png"><small>Stay Notified</small><br>
+                    <p style="margin-top: -25px;">We will notify you with the emails of<br>renewing your insurance policies nearing<br>
+                        expiration dates.</p>
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                    <img src="images/Easy_Access.png"><small>Easy Access</small><br>
+                    <p style="margin-top: -25px;">We are on Cloud and can be accessed<br>from anywhere and anytime. Signing Up<br>
+                        and Signing Off is easy in SafetyLeaf.</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                    <img src="images/Complete_control.png"><small>Complete Control</small><br>
+                    <p style="margin-top: -25px;">You can sign in and with simple<br>customizing options you can make the<br>
+                        in-built portals your very own.</p>
+            </div>
+        </div>
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+    <div id="section9">
+        <div class="row" style="background-color: white; padding-top: 20px;">
+            <div class="col-sm-8" style="padding-top: 20px;"><p><small>&#169 2016 safetyleaf.com, All Rights reserved.</small></div>
+            <div class="col-sm-4" style="text-align: center; padding-top: 10px; padding-left: 130px; display: flex;">
+                <a href="http://www.Twitter.com" style="padding-right: 40px;">
+                    <img src="images/Twitter.png"></a>
+                <a href="http://www.Facebook.com" style="padding-right: 40px;">
+                    <img src="images/Facebook.png"></a>
+                <a href="http://www.Linkedin.com">
+                    <img src="images/Linkedin.png"></a>
+            </div>
+        </div>
+        `
+    </div>
+</div>
+
+
+</body>
+</html>

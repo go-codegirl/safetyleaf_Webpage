@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Safety Leaf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <style type="text/css">
+        body { background: white !important;
+                padding-top: 40px;
+            -webkit-text-size-adjust: auto;
+
+        } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+        .icon-bar {
+            background-color:#81b93c !important;
+        }
+
+    </style>
+    <link rel="stylesheet" href="CSS/indexPage.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() { // check if scroll event happened
+                if ($(document).scrollTop() < 870 )
+                    {
+                        // if not, change it back to transparent
+                        $(".navbar-fixed-top").css("background-color", "transparent");
+                        $(".navbar-fixed-top").css("box-shadow", "0px 0px 0px #888888");
+                    }// if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+                else
+                    {
+                        // check if user scrolled more than 50 from top of the browser window
+                        $(".navbar-fixed-top").css("background-color", "white");
+                        $(".navbar-fixed-top").css("box-shadow", "0px 1px 5px #888888");
+                    }
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!--data-spy="scroll" data-target=".navbar" data-offset="50"-->
+<!--style="box-shadow: 0px 1px 5px #888888;"-->
+
+<nav class="navbar navbar-fixed-top" id="bar">
+    <div class="container-fluid" >
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"> <img src="images/SafetyLeaf_logo.png"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav  navbar-right">
+                <li><button type="button" class="btn btn-success">TRY FOR FREE</button></li>
+                <li><a href="productPage.html">Product</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Support</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="caret"></span></a>
+
+                    <div class="dropdown-menu" style="width: 480px">
+
+                            <fieldset class='textbox' style="padding:30px">
+                                <input style="margin-top: 8px;" type="email" id="email" placeholder="Email" />
+                                <input style="margin-top: 8px; margin-bottom: 10px;" type="password" id="password" placeholder="Passsword" />
+                                <h6 id="text"><a href="#"> Forgot Login?</a></h6>
+                                <input style="padding-top: 10px;"  type="submit" id="login"  value="LOGIN" />
+                            </fieldset>
+
+                    </div>
+                <li style="padding-top: 8px;"><img src="images/Phone_icon.png"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+        <div id="section2" style="margin-left: -20px; margin-right: -20px; padding-top: 160px; margin-top: -40px; ">
+
+            <!--<img src="images/Hero_Image_2.jpg" class="img-responsive">-->
+            <h1 id="text1" style="display: inline;">Stay </h1>
+            <p id="text2" style="display: inline;">Organized</p>
+            <h4 id="text3" style="  text-align: center; padding-top: 20px;">Go paperless with Insurance Polices</h4>
+        </div>
+</div>
+
+<div class="container">
+    <div class="form-actions">
+        <div id="button">
+            <button type="button" class="btn btn-default">TRY SAFETY LEAF FOR FREE</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+    <div class="row" style="padding: 70px; width: 100%; text-align: center; padding-bottom: 30px;" >
+
+        <div class="col-lg-3"><img src="images/empty_placeholder.png" alt="an image" id="img1">
+                                <img src="images/on_cloud-2.png" id="img2" style="position: absolute; margin-left: -77px; padding-top: 20px;">
+                <h4>On Cloud</h4><br>
+                <p style="margin-top: -15px;">It is web based and is available<br>
+                    anywhere at anytime. Sign up<br>
+                    and get ready to start.</p>
+        </div>
+
+        <div class="col-lg-3"><img src="images/empty_placeholder.png" alt="an image" id="img3">
+                                <img src="images/easy_to_setup-2.png" alt="an image" id="img4" style="position: absolute; margin-left: -77px; padding-top: 20px;">
+                <h4>Easy To Setup</h4><br>
+                <p style="margin-top: -15px;">It is intuitive as it can be<br>
+                    Configured to the system without<br>
+                    any complicated procedures.</p>
+        </div>
+
+        <div class="col-lg-3"><img src="images/empty_placeholder.png" alt="an image" id="img5">
+                                <img src="images/easy_customisation-2.png" alt="an image" id="img6" style="position: absolute; margin-left: -77px; padding-top: 20px;">
+                <h4>Easy Customization</h4><br>
+                <p style="margin-top: -15px;">The simple to use UI helps you to<br>
+                    add a logo, configure and manage<br>
+                    the email domains.</p>
+        </div>
+
+        <div class="col-lg-3"><img src="images/empty_placeholder.png" alt="an image" id="img7">
+                                <img src="images/safe_secure-2.png" alt="an image" id="img8" style="position: absolute; margin-left: -77px; padding-top: 20px;">
+                <h4>Safe & Secure</h4><br>
+                <p style="margin-top: -15px;">Protecting your data is our top<br>
+                    priority an all personal data is<br>
+                    handle in confidentially.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+        <div id="section4">
+            <div class="row" style="background-color: #81b93c;">
+                <div class="col-lg-8"><h1>Right Help<br> at the right time</h1><br>
+                    <p style="margin-top: -10px;">It is intuitive as it can be configured to the systems without any <br>
+                        complicated procedures.</p>
+                </div>
+                <div class="col-sm-4" style="padding-bottom: 40px; padding-left: 80px;"><img src="images/Video.jpg" alt="video"></div>
+
+            </div>
+
+        </div>
+
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+    <div id="section5">
+
+        <div class="row" style="padding-bottom: 40px;">
+            <div class="col-sm-4">
+                <table class="table table-borderless">
+                    <tbody>
+                    <tr>
+                        <td width="40%">
+                            <img src="images/empty_placeholder.png" alt="an image" id="img9">
+                            <img src="images/Easy_Registration-2.png" id= "img10" style="position: absolute; margin-left: -77px; padding-top: 18px;">
+                        </td>
+                        <td>
+                            <img src="images/empty_placeholder.png" alt="an image" id="img11">
+                            <img src="images/Hassel_free-2.png" id= "img12" style="position: absolute; margin-left: -77px; padding-top: 18px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 30px;">
+                            <img src="images/empty_placeholder.png" alt="an image" id="img13">
+                            <img src="images/Dashboard-2.png" id= "img14" style="position: absolute; margin-left: -77px; padding-top: 18px;">
+                        </td>
+                        <td style="padding-top: 30px;">
+                            <img src="images/empty_placeholder.png" alt="an image" id="img15">
+                            <img src="images/Stay_Notified-2.png" id= "img16" style="position: absolute; margin-left: -77px; padding-top: 18px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 30px;">
+                            <img src="images/empty_placeholder.png" alt="an image" id="img17">
+                            <img src="images/Easy_Access-2.png" id= "img18" style="position: absolute; margin-left: -77px; padding-top: 18px;">
+                        </td>
+                        <td style="padding-top: 30px;">
+                            <img src="images/empty_placeholder.png" alt="an image" id="img19">
+                            <img src="images/Complete_control-2.png" id= "img20" style="position: absolute; margin-left: -77px; padding-top: 18px;">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-sm-8 text-centre" style="padding-top: 80px; padding-right: 180px; padding-left: 130px;">
+                    <aside>
+                        <h1>A Competent Solution</h1>
+                        <h4><small>Visit Our</small></h4>
+                        <p style="text-align: center;"><button type="button" class="btn btn-success" style="margin-top: 15px;">Product Page</button></p>
+                    </aside>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+        <div id="section6">
+
+            <img src="images/Happy_Family.png">
+        </div>
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+        <div id="section7">
+
+            <h1>Give us a try it's free</h1>
+            <button type="button" class="btn btn-success" style="text-align: center">TRY FOR FREE</button>
+
+        </div>
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+        <div id="section8">
+            <div class="row" style="background-color: #81b93c; padding-top: 40px; padding-bottom: 40px;">
+                <div class="col-sm-8"><p>Feel free to <br> contact us at</p></div>
+                 <div class="col-sm-4" style="text-align: center; padding-top: 30px; padding-right: 70px;"><a href="mailto:support@safetyLeaf.com">
+                     <u>support@safetyleaf.com</u></a></div>
+            </div>
+            `
+        </div>
+</div>
+
+<div class="container-fluid" style="margin-left: -20px; margin-right: -20px;">
+    <div id="section9">
+        <div class="row" style="background-color: white;">
+            <div class="col-sm-8" style="padding-top: 20px;"><p><small>&#169 2016 safetyleaf.com, All Rights reserved.</small></div>
+            <div class="col-sm-4" style="text-align: center; padding-top: 10px; padding-left: 130px; display: flex;">
+                <a href="http://www.Twitter.com" style="padding-right: 40px;">
+                    <img src="images/Twitter.png"></a>
+                <a href="http://www.Facebook.com" style="padding-right: 40px;">
+                    <img src="images/Facebook.png"></a>
+                <a href="http://www.Linkedin.com">
+                    <img src="images/Linkedin.png"></a>
+            </div>
+        </div>
+        `
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery.fittext.js"></script>
+<script type="text/javascript">
+    $("#text1").fitText(1.0);
+       $("#text2").fitText(1.0);
+      $("#text3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+</script>
+</body>
+</html>

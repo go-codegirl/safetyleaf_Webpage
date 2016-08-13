@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "lato bold";
+    src: url('../Fonts/Lato Font/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "lato semibold italic";
+    src: url('../Fonts/Lato Font/Lato-SemiboldItalic.ttf') format('truetype');
+}
+
+
+#section2 h1 {
+    color: #595959;
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 9px;
+    position: absolute;
+    top: 200px;
+    /*padding: 10px;*/
+    left: 500px;
+    /*bottom: 20px;*/
+    /*padding-top: 120px;*/
+    font-family: lato bold ;
+}
+
+#section2 h1 strong {
+    color: #0e8b46;
+}
+
+#section2 h4 {
+    font-size: 30px;
+    color: #595959;
+    position: absolute;
+    /*padding-top: 150px;*/
+    top: 300px;
+    padding-left: 450px;
+    letter-spacing: 2px;
+    font-family: lato semibold italic;
+}
+
+
+/*#section2 {*/
+    /*background-image: url(../images/Hero_Image.png);*/
+    /*background-repeat: no-repeat;*/
+    /*width: 100%;*/
+    /*height: 1000px;*/
+
+/*}*/
+
+/*#img {*/
+    /*background-image: url(../images/Hero_Image_2.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*height: 800px;*/
+
+/*}*/
+/*@media only screen and (max-width: 320px) {*/
+    /*#img {*/
+
+        /*background-size: auto;*/
+    /*}*/
+/*}*/
+
+/*#img p {*/
+    /*font-size: 70px;*/
+    /*color: #81b93c;*/
+/*}*/
+
+/*#img h1 {*/
+    /*font-size: 70px;*/
+/*}*/
+
+/*#img h4 {*/
+    /*font-size: 30px;*/
+/*}*/
+
+/*strong {*/
+    /*color: #81b93c;*/
+/*}*/
+
+/*.css-typing*/
+/*{*/
+    /*width: 30em;*/
+    /*white-space:nowrap;*/
+    /*overflow:hidden;*/
+    /*!*-webkit-animation: type 5s steps(50) infinite;*!*/
+    /*animation: type 5s steps(50, end);*/
+    /*animation-iteration-count: infinite;*/
+/*}*/
+
+/*@keyframes type{*/
+    /*from { width: 0; }*/
+/*}*/
+
+/*@-webkit-keyframes type {*/
+    /*from {*/
+        /*width: 0;*/
+    /*}*/
+/*}*/
+
+ /*p{*/
+    /*font-size: 70px;*/
+    /*margin: 30px;*/
+    /*white-space:nowrap;*/
+    /*overflow: hidden;*/
+    /*width: 30em;*/
+    /*animation: type 5s steps(50, end) infinite;*/
+/*}*/
+
+/*!* let's animate, it's super easy *!*/
+/*@keyframes type{*/
+    /*from{ width: 0;}*/
+/*}*/
+/*!*looks like something is wrong, Fixed!!! *!*/
+
+/*!*let's make it more realistic, so I added span tag, let's animate span*!*/
+
+
+/*@-webkit-keyframes type {*/
+    /*from {*/
+        /*width: 0;*/
+    /*}*/
+/*}*/

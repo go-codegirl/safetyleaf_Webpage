@@ -1,0 +1,390 @@
+@font-face {
+    font-family: "open sans light";
+    src: url('../Fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "open sans regular";
+    src: url('../Fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "raleway semibold";
+    src: url('../Fonts/raleway_family_v3/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "raleway regular";
+    src: url('../Fonts/raleway_family_v3/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "lato bold";
+    src: url('../Fonts/Lato Font/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "lato semibold italic";
+    src: url('../Fonts/Lato Font/Lato-SemiboldItalic.ttf') format('truetype');
+}
+
+/*#bar {*/
+    /*-webkit-box-shadow: 0px 1px 5px #888888;*/
+    /*-moz-box-shadow:    0px 1px 5px #888888;*/
+    /*box-shadow:         0px 1px 5px #888888;*/
+    /*z-index:999;*/
+/*}*/
+
+.navbar-header img {
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-nav li {
+    margin-top: 25px;
+    /*margin-right: 10px;*/
+    padding-right: 50px;
+}
+
+.navbar-nav .btn-success {
+    height: 50px;
+    width: 150px;
+    background-color: #81b93c;
+    font-family: raleway semibold;
+    font-size: 18px;
+}
+
+.navbar-nav a {
+    color: #595959;
+    font-family: open sans light ;
+    font-size: 18px;
+}
+.navbar-nav a:hover, a:focus {
+    color: #005580;
+    text-decoration: underline;
+}
+
+input[type=email], input[type=password] {
+    width: 45%;
+    padding: 8px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    outline: none;
+}
+#email {
+
+    padding-left: 20px;
+    color: darkgrey;
+
+}
+
+#password {
+    margin-top: -40px;
+    margin-left: -10px;
+    margin-right: 15px;
+    padding-left: 20px;
+    float: right;
+    color: darkgrey;
+
+}
+
+
+#text {
+    border: none;
+    color: lightgrey;
+    text-decoration: underline;
+    padding-top: 15px;
+    margin-left: 15px;
+    outline: none;
+}
+
+input[type=submit] {
+    border-radius: 4px;
+    border: none;
+    background-color: #81b93c;
+    color: white;
+    padding: 5px;
+    width: 20%;
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+/*#section2 img {*/
+    /*width: 100%;*/
+    /*!*padding-top: -50px;*!*/
+    /*margin-top: -60px;*/
+
+/*}*/
+
+.form-actions {
+    margin: 0;
+    text-align: center;
+}
+
+#button .btn-default {
+    font-size: 20px;
+    color: #81b93c;
+    background-color: white;
+    border-style: solid;
+    border-color: #81b93c;
+    border-width: 2px;
+    font-weight: normal;
+    font-family: raleway regular;
+}
+
+#section2 {
+    background-image: url(../images/Hero_Image_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1090px;
+}
+
+#section2 h1  {
+    color: #595959;
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 9px;
+    font-family: lato bold ;
+    padding-left: 500px;
+}
+
+#section2 h4 {
+    font-size: 30px;
+    color: #595959;
+    letter-spacing: 2px;
+    font-family: lato semibold italic;
+}
+
+#section2 p {
+    color: #0e8b46;
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-family: lato bold ;
+}
+
+#section2 p{
+    white-space:nowrap;
+    overflow: hidden;
+    width: 18em;
+    animation: type 5s steps(100) infinite;
+}
+
+/* let's animate, it's super easy */
+@keyframes type{
+    from{ width: 0;}
+}
+/*looks like something is wrong, Fixed!!! */
+
+/*let's make it more realistic, so I added span tag, let's animate span*/
+#section2 span{
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    to{ opacity: .0;}
+}
+
+
+.col-lg-3 #img2, .col-sm-2 img, .col-lg-3 #img4, .col-lg-3 #img6, .col-lg-3 #img8, td #img10, td #img12, td #img14, td #img16,
+td #img18, td #img20{
+    -webkit-transition: all 2s ease; /* Safari and Chrome */
+    -moz-transition: all 2s ease; /* Firefox */
+    -ms-transition: all 2s ease; /* IE 9 */
+    -o-transition: all 2s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+
+.col-lg-3:hover #img2, .col-sm-2:hover img, .col-lg-3:hover #img4, .col-lg-3:hover #img6, .col-lg-3:hover #img8, td:hover #img10, td:hover #img12,
+td:hover #img14, td:hover #img16, td:hover #img18, td:hover #img20{
+    -webkit-transform: scale(1.25); /* Safari and Chrome */
+    -moz-transform: scale(1.25); /* Firefox */
+    -ms-transform: scale(1.25); /* IE 9 */
+    -o-transform: scale(1.25); /* Opera */
+    transform: scale(0.55);
+}
+
+.col-lg-3 h4 {
+    font-family: raleway regular;
+    font-size: 21px;
+    color: #595959;
+}
+
+.col-lg-3 p {
+    font-family:open sans light;
+    font-size: 16px;
+    color: #595959;
+}
+
+#section4 h1 {
+    color: white;
+    font-family: raleway regular;
+    font-size: 70px;
+    margin-left: 80px;
+    padding-top: 60px;
+    font-weight: normal;
+    letter-spacing: 2px;
+
+}
+
+#section4 p {
+    color: white;
+    font-family: open sans regular;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+
+}
+
+#section4 .col-sm-4 img {
+    padding-top: 40px;
+    padding-right: 60px;
+}
+
+table {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 190px;
+    text-align: left;
+    width: 30%;
+
+}
+tr td {
+    padding-bottom: 40px;
+}
+
+ /*aside {*/
+    /*position: relative;*/
+    /*bottom: 300px;*/
+    /*left: 150px;*/
+    /*margin-bottom: -200px;*/
+/*}*/
+
+aside h1 {
+    /*position: absolute;*/
+    font-family: raleway regular;
+    font-size: 70px;
+    color: #0e8b46;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+aside h4 {
+    /*position: absolute;*/
+    font-family: raleway semibold;
+    font-size: 28px;
+    color: #0e8b46;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+aside .btn-success {
+    /*position: absolute;*/
+    font-family: raleway semibold;
+    font-size: 28px;
+    font-weight: normal;
+    background-color: #81b93c;
+    border-radius: 4px;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+#section6 img {
+    width: 100%;
+
+}
+
+#section7 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#section7 h1 {
+    font-family: raleway regular;
+    font-size: 70px;
+    color: #0e8b46;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#section7 .btn-success {
+    font-family: raleway semibold;
+    font-size: 28px;
+    font-weight: normal;
+    background-color: #81b93c;
+    border-radius: 4px;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#section8 p  {
+    font-family: raleway regular;
+    font-size: 70px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 60px;
+    line-height: 70px;
+}
+
+#section8 .col-sm-4 a {
+    font-family: raleway regular;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#section9 p  {
+    margin-left: 60px;
+    color: #595959;
+    letter-spacing: 2px;
+}
+
+.table td {
+    border-top: none !important;
+    border-left: none !important;
+}
+/*@media only screen and (max-width: 320px) {*/
+    /*#section2 h1, p {*/
+        /*font-size: 10px;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (max-width: 640px) {*/
+    /*#section2 h1, p {*/
+        /*font-size: 20px;*/
+    /*}*/
+/*}*/
+/*@media only screen and (max-width: 768px) {*/
+    /*#section2 h1, p {*/
+        /*font-size: 30px;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1200px) {*/
+    /*#section2 h1, p {*/
+        /*font-size: 40px;*/
+    /*}*/
+/*}*/
+
+
+
+
+
