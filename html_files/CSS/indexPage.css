@@ -50,6 +50,24 @@
     .side-collapse.in {
         width:0;
     }
+
+    .pad-xs {
+        padding-top: 45px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+
+    .pad-sm {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .pad-lg {
+        padding-top: 35px;
+    }
 }
 
 .navbar-nav {

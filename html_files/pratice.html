@@ -15,19 +15,11 @@
         }
 
     </style>
-    <link rel="stylesheet" href="CSS/praticePage.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/praticePage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>/**
-     * Created by SravaniMarupeddi on 8/15/16.
-     */
-    $("#fittext1").fitText();
-    $("#fittext2").fitText(7);
-    //    $("#fittext2").fitText(1.2);
-    $("#fittext1").fitText(1.2, { minFontSize: '40px', maxFontSize: '60px' });
-    </script>
     <script>
         $(document).ready(function() {
             var sideslider = $('[data-toggle=collapse-side]');
@@ -37,7 +29,7 @@
             sideslider.click(function(event){
                 $(sel).toggleClass('in');
                 $(sel2).toggleClass('out');
-                $(sel3).toggleClass('down');
+//                $(sel3).toggleClass('down');
             });
 
         });
@@ -93,8 +85,8 @@
     </div>
 </div>
 
-<div class="padding-fluid">
-<h1 class="padding-fluid" id="fittext1" style="text-align: center;">Stay <a href="" class="typewrite" data-period="2000" style="color: #0e8b46; text-decoration: none;" data-type='[ "Organized", "Insured", "Go Lapse-Free", "Lapse-Free" ]'>
+<div class="pad-xs">
+<h1  id="fittext1" style="text-align: center;">Stay <a href="" class="typewrite" data-period="2000" style="color: #0e8b46; text-decoration: none;" data-type='[ "Organized", "Insured", "Go Lapse-Free", "Lapse-Free" ]'>
     <span class="wrap"></span>
 </a> </h1>
 </div>

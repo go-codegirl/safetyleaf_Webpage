@@ -111,7 +111,7 @@ input[type=submit] {
     margin-top: -30px;
     margin-right: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container-fluid{
         width:100%;
         position:relative;
@@ -133,7 +133,11 @@ input[type=submit] {
     .side-collapse.in {
         width:0;
     }
-    .padding-fluid.down{
-        bottom:20000px;
+    .pad-xs {
+        padding-top: 200px;
     }
+
+
 }
+
+
