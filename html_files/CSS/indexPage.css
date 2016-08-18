@@ -28,12 +28,34 @@
     src: url('../Fonts/Lato Font/Lato-SemiboldItalic.ttf') format('truetype');
 }
 
-/*#bar {*/
-    /*-webkit-box-shadow: 0px 1px 5px #888888;*/
-    /*-moz-box-shadow:    0px 1px 5px #888888;*/
-    /*box-shadow:         0px 1px 5px #888888;*/
-    /*z-index:999;*/
-/*}*/
+@media screen and (max-width: 768px) {
+    .container-fluid{
+        width:100%;
+        position:relative;
+        right:0;
+        transition:right .4s;
+    }
+    .container-fluid.out{
+        right:200px;
+    }
+    .side-collapse {
+        top:50px;
+        bottom:0;
+        right:-30px;
+        width:200px;
+        position:fixed;
+        overflow:hidden;
+        transition:width .4s;
+    }
+    .side-collapse.in {
+        width:0;
+    }
+}
+
+.navbar-nav {
+    float: right;
+    /*background-color: white;*/
+}
 
 .navbar-header img {
     margin-left: 50px;
@@ -59,10 +81,6 @@
     color: #595959;
     font-family: open sans light ;
     font-size: 18px;
-}
-.navbar-nav a:hover, a:focus {
-    color: #005580;
-    text-decoration: underline;
 }
 
 input[type=email], input[type=password] {
@@ -115,13 +133,6 @@ input[type=submit] {
     margin-right: 20px;
 }
 
-/*#section2 img {*/
-    /*width: 100%;*/
-    /*!*padding-top: -50px;*!*/
-    /*margin-top: -60px;*/
-
-/*}*/
-
 .form-actions {
     margin: 0;
     text-align: center;
@@ -146,52 +157,29 @@ input[type=submit] {
     height: 1090px;
 }
 
-#section2 h1  {
+#fittext1 {
+    /*background: rgba(0,0,0,0.2);*/
+    text-align: center;
     color: #595959;
+    font: 60px/1 "Impact";
     text-transform: uppercase;
-    font-size: 70px;
+    display: block;
     letter-spacing: 9px;
     font-family: lato bold ;
-    padding-left: 500px;
+    margin: 6% auto 1%;
 }
 
-#section2 h4 {
-    font-size: 30px;
+#fittext2 {
+    /*background: rgba(0,0,0,0.2);*/
+    text-align: center;
     color: #595959;
+    font: 30px/1 "Impact";
+    text-transform: uppercase;
+    display: block;
     letter-spacing: 2px;
     font-family: lato semibold italic;
+    margin: 2% auto 5%;
 }
-
-#section2 p {
-    color: #0e8b46;
-    font-size: 70px;
-    text-transform: uppercase;
-    letter-spacing: 9px;
-    font-family: lato bold ;
-}
-
-#section2 p{
-    white-space:nowrap;
-    overflow: hidden;
-    width: 18em;
-    animation: type 5s steps(100) infinite;
-}
-
-/* let's animate, it's super easy */
-@keyframes type{
-    from{ width: 0;}
-}
-/*looks like something is wrong, Fixed!!! */
-
-/*let's make it more realistic, so I added span tag, let's animate span*/
-#section2 span{
-    animation: blink 1s infinite;
-}
-
-@keyframes blink{
-    to{ opacity: .0;}
-}
-
 
 .col-lg-3 #img2, .col-sm-2 img, .col-lg-3 #img4, .col-lg-3 #img6, .col-lg-3 #img8, td #img10, td #img12, td #img14, td #img16,
 td #img18, td #img20{
@@ -262,13 +250,6 @@ table {
 tr td {
     padding-bottom: 40px;
 }
-
- /*aside {*/
-    /*position: relative;*/
-    /*bottom: 300px;*/
-    /*left: 150px;*/
-    /*margin-bottom: -200px;*/
-/*}*/
 
 aside h1 {
     /*position: absolute;*/
@@ -361,28 +342,6 @@ aside .btn-success {
     border-top: none !important;
     border-left: none !important;
 }
-/*@media only screen and (max-width: 320px) {*/
-    /*#section2 h1, p {*/
-        /*font-size: 10px;*/
-    /*}*/
-/*}*/
-
-/*@media only screen and (max-width: 640px) {*/
-    /*#section2 h1, p {*/
-        /*font-size: 20px;*/
-    /*}*/
-/*}*/
-/*@media only screen and (max-width: 768px) {*/
-    /*#section2 h1, p {*/
-        /*font-size: 30px;*/
-    /*}*/
-/*}*/
-
-/*@media only screen and (max-width: 1200px) {*/
-    /*#section2 h1, p {*/
-        /*font-size: 40px;*/
-    /*}*/
-/*}*/
 
 
 
