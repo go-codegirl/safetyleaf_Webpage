@@ -133,11 +133,103 @@ input[type=submit] {
     .side-collapse.in {
         width:0;
     }
-    .pad-xs {
-        padding-top: 200px;
-    }
+    /*.pad-xs {*/
+        /*padding-top: 200px;*/
+    /*}*/
 
 
 }
 
+#fittext1 {
+    /*background: rgba(0,0,0,0.2);*/
+    text-align: center;
+    color: #595959;
+    font: 60px/1 "Impact";
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 9px;
+    font-family: lato bold ;
+    margin: 6% auto 2%;
+}
+
+#fittext2 {
+    /*background: rgba(0,0,0,0.2);*/
+    text-align: center;
+    color: #595959;
+    font: 30px/1 "Impact";
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 2px;
+    font-family: lato semibold italic;
+    margin: 2% auto 5%;
+}
+
+.background-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /*bottom: 30px;*/
+
+    display: block;
+    background-image: url(../images/Hero_Image_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 1050px;
+    margin-top: -50px;
+    padding-top: 50px;
+    /*margin-bottom: 30px;*/
+
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.pad-lg {
+    /*position:absolute;*/
+    z-index:2;
+    position: fixed;
+    left: 0;
+    right: 0;
+    /*z-index: 9999;*/
+    /*overflow: auto;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+}
+
+/*.content {*/
+
+    /*position: static;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*z-index: 1;*/
+
+    /*display: block;*/
+    /*background-image: url(../images/Hero_Image_2.jpg);*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*!*width: 1200px;*!*/
+    /*height: 900px;*/
+    /*margin-top: -50px;*/
+    /*!*margin-bottom: 50px;*!*/
+
+    /*-webkit-filter: blur(5px);*/
+    /*-moz-filter: blur(5px);*/
+    /*-o-filter: blur(5px);*/
+    /*-ms-filter: blur(5px);*/
+    /*filter: blur(5px);*/
+/*}*/
+
+/*.content {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*z-index: 0;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+/*}*/
 

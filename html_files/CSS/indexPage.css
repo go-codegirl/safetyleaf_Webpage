@@ -52,14 +52,26 @@
     }
 
     .pad-xs {
-        padding-top: 40px;
+        padding-top: 25px;
+        /*margin-left: -50px;*/
     }
+
+    #section2 {
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -ms-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
+    }
+
+
 }
 
 @media screen and (max-width: 1090px) {
 
     .pad-sm {
         padding-top: 30px;
+        /*margin-left: -40px;*/
     }
 }
 
@@ -67,6 +79,7 @@
 
     .pad-lg {
         padding-top: 35px;
+        /*margin-left: -30px;*/
     }
 }
 
@@ -167,19 +180,40 @@ input[type=submit] {
     font-family: raleway regular;
 }
 
+/*#section2 {*/
+    /*!*position: static;*!*/
+    /*!*z-index:1;*!*/
+    /*background-image: url(../images/Hero_Image_2.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*height: 1090px;*/
+    /*!*padding-top: 100px;*!*/
+    /*-webkit-filter: blur(2px);*/
+    /*-moz-filter: blur(2px);*/
+    /*-ms-filter: blur(2px);*/
+    /*-o-filter: blur(2px);*/
+    /*filter: blur(2px);*/
+    /*!*backdrop-filter: blur(10px);*!*/
+
+/*}*/
+
 #section2 {
-    /*position:absolute;*/
+    /*position: static;*/
+    /*z-index:1;*/
     background-image: url(../images/Hero_Image_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 1090px;
     /*padding-top: 100px;*/
-    /*-webkit-filter: blur(2px);*/
-    /*-moz-filter: blur(2px);*/
-    /*-ms-filter: blur(2px);*/
-    /*-o-filter: blur(2px);*/
-    /*filter: blur(2px);*/
+    /*-webkit-filter: blur(3px);*/
+    /*-moz-filter: blur(3px);*/
+    /*-ms-filter: blur(3px);*/
+    /*-o-filter: blur(3px);*/
+    /*filter: blur(3px);*/
+    /*margin-top: -150px;*/
+    /*backdrop-filter: blur(10px);*/
 
 }
 
@@ -205,8 +239,12 @@ input[type=submit] {
 /*}*/
 
 /*.pad-lg {*/
-    /*position:relative;*/
+
+    /*position:absolute;*/
     /*z-index:2;*/
+    /*margin-top: -800px;*/
+    /*margin-left: 600px;*/
+   /*!*padding-top: -300px;*!*/
 /*}*/
 
 #fittext1 {
