@@ -3,7 +3,7 @@
  */
 $(document).ready(function(){
     $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() < 100 )
+        if ($(document).scrollTop() < 10 )
         {
             // if not, change it back to transparent
             $(".navbar-fixed-top").css("background-color", "transparent");

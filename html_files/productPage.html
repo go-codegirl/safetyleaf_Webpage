@@ -18,43 +18,51 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function() { // check if scroll event happened
-                if ($(document).scrollTop() > 800) { // check if user scrolled more than 50 from top of the browser window
-                    $(".navbar-fixed-top").css("background-color", "white"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-                } else {
-                    $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
-                }
-            });
-        });
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/fixNav.js"></script>
+    <script src="js/slideNav.js"></script>
+    <script src="js/typeText.js"></script>
 </head>
 <body>
 <!--data-spy="scroll" data-target=".navbar" data-offset="50"-->
 
 
-<nav class="navbar navbar-fixed-top" style="background-color:transparent;">
-    <div class="container-fluid">
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid navbar-fixed-top" >
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button type="button" class="navbar-toggle" data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".container-fluid" >
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="hidden-xs"> <img src="images/SafetyLeaf_logo.png"></a>
+            <a href="index.html"> <img src="images/SafetyLeaf_logo.png"></a>
         </div>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav  navbar-right">
-                <li><button type="button" class="btn btn-success">TRY FOR FREE</button></li>
-                <li><a href="productPage.html">Product</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">Support</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="caret"></span></a>
-                <li style="padding-top: 8px;"><img src="images/Phone_icon.png"></li>
-            </ul>
+        <div class="side-collapse in">
+            <nav class="navbar-collapse">
+                <ul class="nav navbar-nav  navbar-right">
+                    <li><button type="button" class="btn btn-success">TRY FOR FREE</button></li>
+                    <li><a href="productPage.html">Product</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login <span class="caret"></span></a>
+
+                        <div class="dropdown-menu" style="width: 480px">
+
+                            <fieldset class='textbox' style="padding:30px">
+                                <input style="margin-top: 8px;" type="email" id="email" placeholder="Email" />
+                                <input style="margin-top: 8px; margin-bottom: 10px;" type="password" id="password" placeholder="Passsword" />
+                                <h6 id="text"><a href="#"> Forgot Login?</a></h6>
+                                <input style="padding-top: 10px;"  type="submit" id="login"  value="LOGIN" />
+                            </fieldset>
+
+                        </div>
+                    </li>
+                    <li style="padding-top: 8px;"><img src="images/Phone_icon.png"></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </nav>
