@@ -107,18 +107,25 @@
     padding-right: 50px;
 }
 
+
 .navbar-nav .btn-success {
     height: 50px;
     width: 150px;
     background-color: #81b93c;
     font-family: raleway semibold;
     font-size: 18px;
-}
+    margin-top: -18px;
 
-.navbar-nav a {
+}
+.navbar-nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+.navbar-nav li a {
     color: #595959;
     font-family: open sans light ;
     font-size: 18px;
+    text-decoration: none;
 }
 
 input[type=email], input[type=password] {
